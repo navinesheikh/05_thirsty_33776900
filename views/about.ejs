@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/navbar') %>
+
+    <main class="container">
+      <h1>About <%= shopName %></h1>
+      <p>We sell all sorts of drinks</p>
+
+      <h2>Our Locations:</h2>
+      <ul>
+        <% for (let i = 0; i < shopLocations.length; i++) { %>
+          <li><%= shopLocations[i] %></li>
+        <% } %>
+      </ul>
+    </main>
+  </body>
+</html>

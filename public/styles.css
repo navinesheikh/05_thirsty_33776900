@@ -1,0 +1,65 @@
+body {
+    font-family: 'Verdana', sans-serif; /* Slightly different, modern font */
+    background-color: #e8f4f8; /* Soft sky blue background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #0468d7; /* Vibrant blue for the heading */
+    text-align: center;
+    font-size: 2.5em; /* Slightly larger and bold */
+    margin-top: 20px;
+  }
+
+  h2 {
+    color: #000; /* Black for the heading */
+    text-align: center;
+    font-size: 2em; /* Slightly larger and bold */
+    margin-top: 20px;
+  }
+  
+  form {
+    width: 60%; /* Slightly wider */
+    margin: 20px auto;
+    padding: 25px;
+    border: 1px solid #b3e5fc; /* Light blue border */
+    border-radius: 15px; /* Softer rounded corners */
+    background-color: #ffffff; /* White background */
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2); /* More noticeable shadow */
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #0468d7; /* Blue border to match the theme */
+    border-radius: 8px; /* More rounded corners */
+    background-color: #f0faff; /* Light blue-tinted background */
+    color: #0468d7; /* Blue text */
+    font-size: 1em; /* Standard text size */
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    border-color: #ff7f50; /* Coral when focused */
+    background-color: #ffe4d9; /* Light coral background */
+  }
+  
+  input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #ff7f50; /* Coral */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1em; /* Standard size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #d6563d; /* Darker coral */
+  }  

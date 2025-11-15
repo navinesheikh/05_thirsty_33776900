@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/navbar') %>
+
+    <main class="container">
+      <h1>Thanks for your feedback!</h1>
+
+      <h2>Your responses</h2>
+      <p><strong>Name:</strong> <%= data.firstName %> <%= data.surname %></p>
+      <p><strong>Email:</strong> <%= data.email %></p>
+      <p><strong>Age:</strong> <%= data.age || '—' %></p>
+      <p><strong>Drink category:</strong> <%= data.drinkCategory || '—' %></p>
+      <p><strong>Student:</strong> <%= data.isStudent ? 'Yes' : 'No' %></p>
+
+      <p><a href="/survey">Fill another survey</a></p>
+    </main>
+  </body>
+</html>

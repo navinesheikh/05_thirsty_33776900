@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/navbar') %>
+
+    <main class="container">
+      <h1>Welcome to <%= shopName %></h1>
+      <h2>Here are some things that we sell:</h2>
+      <ul>
+        <% for (let i = 0; i < productCategories.length; i++) { %>
+          <li><%= productCategories[i] %></li>
+        <% } %>
+      </ul>
+    </main>
+  </body>
+</html>

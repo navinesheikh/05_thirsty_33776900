@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('partials/head') %>
+  <body>
+    <%- include('partials/navbar') %>
+
+    <main class="container">
+      <h1>Customer Survey</h1>
+      <p>No sign-up needed. Just answer a few questions.</p>
+
+      <form action="/survey" method="POST">
+        <h2>Your details</h2>
+        <label>First name:</label><br>
+        <input type="text" name="firstName" required><br><br>
+
+        <label>Surname:</label><br>
+        <input type="text" name="surname" required><br><br>
+
+        <label>Email address:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <h2>Questions</h2>
+        <label>How old are you?</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Which of the following drinks categories do you consume?</label><br>
+        <% for (let i = 0; i < productCategories.length; i++) { %>
+          <label>
+            <input type="radio" name="drinkCategory" value="<%= productCategories[i] %>">
+            <%= productCategories[i] %>
+          </label><br>
+        <% } %>
+        <br>
+
+        <label>
+          <input type="checkbox" name="isStudent" value="yes">
+          Are you a student?
+        </label>
+        <br><br>
+
+        <button type="submit">Submit Survey</button>
+      </form>
+    </main>
+  </body>
+</html>

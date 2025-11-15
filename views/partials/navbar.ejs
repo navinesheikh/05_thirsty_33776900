@@ -1,0 +1,10 @@
+<nav class="nav">
+  <div class="nav__brand"><a href="/">Thirsty Student</a></div>
+  <ul class="nav__links">
+    <li class="<%= currentPath === '/' ? 'active' : '' %>"><a href="/">Home</a></li>
+    <li class="<%= currentPath.startsWith('/about') ? 'active' : '' %>"><a href="/about">About</a></li>
+    <li class="<%= currentPath.startsWith('/search') ? 'active' : '' %>"><a href="/search">Search</a></li>
+    <li class="<%= currentPath.startsWith('/register') ? 'active' : '' %>"><a href="/register">Register</a></li>
+    <li class="<%= currentPath.startsWith('/survey') ? 'active' : '' %>"><a href="/survey">Survey</a></li>
+  </ul>
+</nav>
